@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1069743067645",
+    "firebase_url": "https://survey-be974-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "survey-be974",
+    "storage_bucket": "survey-be974.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069743067645:android:85c5b60cbec065c5be8994",
+        "android_client_info": {
+          "package_name": "com.mycompany.sendifardiansyah"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeNIa1ZeHEWi96vrrucncjvIx8zSGj_vc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069743067645:android:f5ec387cd94fa274be8994",
+        "android_client_info": {
+          "package_name": "com.mycompany.surveyx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeNIa1ZeHEWi96vrrucncjvIx8zSGj_vc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://survey-be974-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">1069743067645</string>
+    <string name="google_api_key" translatable="false">AIzaSyDeNIa1ZeHEWi96vrrucncjvIx8zSGj_vc</string>
+    <string name="google_app_id" translatable="false">1:1069743067645:android:85c5b60cbec065c5be8994</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDeNIa1ZeHEWi96vrrucncjvIx8zSGj_vc</string>
+    <string name="google_storage_bucket" translatable="false">survey-be974.appspot.com</string>
+    <string name="project_id" translatable="false">survey-be974</string>
+</resources>

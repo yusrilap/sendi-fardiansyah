@@ -17,6 +17,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
+
 import 'survey_page_model.dart';
 export 'survey_page_model.dart';
 
@@ -90,8 +91,8 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
             backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             body: Center(
               child: SizedBox(
-                width: 50.0,
-                height: 50.0,
+                width: 50,
+                height: 50,
                 child: CircularProgressIndicator(
                   valueColor: AlwaysStoppedAnimation<Color>(
                     FlutterFlowTheme.of(context).primary,
@@ -118,51 +119,51 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
             automaticallyImplyLeading: false,
             leading: FlutterFlowIconButton(
               borderColor: Colors.transparent,
-              borderRadius: 30.0,
-              borderWidth: 1.0,
-              buttonSize: 60.0,
+              borderRadius: 30,
+              borderWidth: 1,
+              buttonSize: 60,
               icon: Icon(
                 Icons.arrow_back_rounded,
                 color: Colors.white,
-                size: 30.0,
+                size: 30,
               ),
               onPressed: () async {
                 context.pushNamed('data_survey');
               },
             ),
             title: Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: AlignmentDirectional(0, 0),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 54.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(0, 0, 54, 0),
                 child: Text(
                   'Data Survey',
                   textAlign: TextAlign.start,
                   style: FlutterFlowTheme.of(context).titleLarge.override(
                         fontFamily: 'Poppins',
                         color: FlutterFlowTheme.of(context).alternate,
-                        fontSize: 20.0,
-                        letterSpacing: 0.0,
+                        fontSize: 20,
+                        letterSpacing: 0,
                       ),
                 ),
               ),
             ),
             actions: [],
             centerTitle: true,
-            elevation: 2.0,
+            elevation: 2,
           ),
           body: ListView(
             padding: EdgeInsets.zero,
             scrollDirection: Axis.vertical,
             children: [
               Container(
-                width: 393.0,
-                height: 3.0,
+                width: 393,
+                height: 3,
                 decoration: BoxDecoration(
                   color: Color(0x3257636C),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-1.0, 0.0),
+                alignment: AlignmentDirectional(-1, 0),
                 child: Form(
                   key: _model.formKey,
                   autovalidateMode: AutovalidateMode.disabled,
@@ -170,53 +171,51 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(-1.0, 0.0),
+                        alignment: AlignmentDirectional(-1, 0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              26.0, 26.0, 26.0, 0.0),
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(26, 26, 26, 0),
                           child: Text(
                             '1. Apakah Anda Mengetahui  Calon Wali Kota Sendi Fardiansyah ?',
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Poppins',
-                                  letterSpacing: 0.0,
+                                  letterSpacing: 0,
                                 ),
                           ),
                         ),
                       ),
                       Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(8.0),
+                          borderRadius: BorderRadius.circular(8),
                           child: Image.asset(
                             'assets/images/Desain_tanpa_judul_(2).png',
-                            width: 188.0,
-                            height: 150.0,
+                            width: 188,
+                            height: 150,
                             fit: BoxFit.cover,
                           ),
                         ),
                       ),
                       Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                         child: FlutterFlowRadioButton(
                           options: ['Ya', 'Tidak'].toList(),
                           onChanged: (val) => setState(() {}),
                           controller: _model.radioKenalCalegValueController ??=
                               FormFieldController<String>(null),
-                          optionHeight: 32.0,
-                          optionWidth: 100.0,
+                          optionHeight: 32,
+                          optionWidth: 100,
                           textStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
                                     fontFamily: 'Readex Pro',
-                                    letterSpacing: 0.0,
+                                    letterSpacing: 0,
                                   ),
                           selectedTextStyle:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Readex Pro',
-                                    letterSpacing: 0.0,
+                                    letterSpacing: 0,
                                   ),
                           buttonPosition: RadioButtonPosition.left,
                           direction: Axis.horizontal,
@@ -230,17 +229,17 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-1.0, 0.0),
+                        alignment: AlignmentDirectional(-1, 0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              26.0, 20.0, 26.0, 0.0),
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(26, 20, 26, 0),
                           child: Text(
                             '2. Apakah Anda Berkenan Memilih Sendi Fardiansyah ?',
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Poppins',
-                                  letterSpacing: 0.0,
+                                  letterSpacing: 0,
                                 ),
                           ),
                         ),
@@ -251,17 +250,17 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                         controller:
                             _model.radioBersediaMemilihValueController ??=
                                 FormFieldController<String>(null),
-                        optionHeight: 32.0,
-                        optionWidth: 100.0,
+                        optionHeight: 32,
+                        optionWidth: 100,
                         textStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
                                   fontFamily: 'Readex Pro',
-                                  letterSpacing: 0.0,
+                                  letterSpacing: 0,
                                 ),
                         selectedTextStyle:
                             FlutterFlowTheme.of(context).bodyMedium.override(
                                   fontFamily: 'Readex Pro',
-                                  letterSpacing: 0.0,
+                                  letterSpacing: 0,
                                 ),
                         buttonPosition: RadioButtonPosition.left,
                         direction: Axis.horizontal,
@@ -273,26 +272,25 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                         verticalAlignment: WrapCrossAlignment.start,
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-1.0, 0.0),
+                        alignment: AlignmentDirectional(-1, 0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              26.0, 20.0, 26.0, 0.0),
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(26, 20, 26, 0),
                           child: Text(
-                            '3. Siapa Walikota Pilihan anda Pada Pilwalkot Tahun 2020 ?',
+                            '3. Siapa Walikota Pilihan anda Pada Pilwalkot Tahun 2018 ?',
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Poppins',
-                                  letterSpacing: 0.0,
+                                  letterSpacing: 0,
                                 ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: AlignmentDirectional(0, 0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 10.0, 0.0, 0.0),
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                           child: FlutterFlowDropDown<String>(
                             controller:
                                 _model.dropPilwalkot2020ValueController ??=
@@ -306,28 +304,28 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                             ],
                             onChanged: (val) => setState(
                                 () => _model.dropPilwalkot2020Value = val),
-                            width: 340.0,
-                            height: 56.0,
+                            width: 340,
+                            height: 56,
                             textStyle: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
                                   fontFamily: 'Readex Pro',
-                                  letterSpacing: 0.0,
+                                  letterSpacing: 0,
                                 ),
-                            hintText: 'Pilih Pilwalkot 2020',
+                            hintText: 'Pilih Pilwalkot 2018',
                             icon: Icon(
                               Icons.keyboard_arrow_down_rounded,
                               color: FlutterFlowTheme.of(context).secondaryText,
-                              size: 24.0,
+                              size: 24,
                             ),
                             fillColor: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            elevation: 2.0,
+                            elevation: 2,
                             borderColor: FlutterFlowTheme.of(context).alternate,
-                            borderWidth: 2.0,
-                            borderRadius: 8.0,
-                            margin: EdgeInsetsDirectional.fromSTEB(
-                                16.0, 4.0, 16.0, 4.0),
+                            borderWidth: 2,
+                            borderRadius: 8,
+                            margin:
+                                EdgeInsetsDirectional.fromSTEB(16, 4, 16, 4),
                             hidesUnderline: true,
                             isOverButton: true,
                             isSearchable: false,
@@ -336,26 +334,25 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-1.0, 0.0),
+                        alignment: AlignmentDirectional(-1, 0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              26.0, 20.0, 26.0, 0.0),
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(26, 20, 26, 0),
                           child: Text(
                             '4. Partai Yang Dipilih Pada Pemilu 2024 ?',
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Poppins',
-                                  letterSpacing: 0.0,
+                                  letterSpacing: 0,
                                 ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: AlignmentDirectional(0, 0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 10.0, 0.0, 0.0),
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                           child: FlutterFlowDropDown<String>(
                             controller: _model.dropPartai2024ValueController ??=
                                 FormFieldController<String>(null),
@@ -373,28 +370,28 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                             ],
                             onChanged: (val) => setState(
                                 () => _model.dropPartai2024Value = val),
-                            width: 340.0,
-                            height: 56.0,
+                            width: 340,
+                            height: 56,
                             textStyle: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
                                   fontFamily: 'Readex Pro',
-                                  letterSpacing: 0.0,
+                                  letterSpacing: 0,
                                 ),
                             hintText: 'Pilih Partai',
                             icon: Icon(
                               Icons.keyboard_arrow_down_rounded,
                               color: FlutterFlowTheme.of(context).secondaryText,
-                              size: 24.0,
+                              size: 24,
                             ),
                             fillColor: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            elevation: 2.0,
+                            elevation: 2,
                             borderColor: FlutterFlowTheme.of(context).alternate,
-                            borderWidth: 2.0,
-                            borderRadius: 8.0,
-                            margin: EdgeInsetsDirectional.fromSTEB(
-                                16.0, 4.0, 16.0, 4.0),
+                            borderWidth: 2,
+                            borderRadius: 8,
+                            margin:
+                                EdgeInsetsDirectional.fromSTEB(16, 4, 16, 4),
                             hidesUnderline: true,
                             isOverButton: true,
                             isSearchable: false,
@@ -403,26 +400,25 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-1.0, 0.0),
+                        alignment: AlignmentDirectional(-1, 0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              26.0, 20.0, 26.0, 0.0),
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(26, 20, 26, 0),
                           child: Text(
                             '5. Siapa Calon Walikota Pilihan anda Pada Pilwalkot Tahun 2024 ?',
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Poppins',
-                                  letterSpacing: 0.0,
+                                  letterSpacing: 0,
                                 ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: AlignmentDirectional(0, 0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 10.0, 0.0, 0.0),
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                           child: FlutterFlowDropDown<String>(
                             controller:
                                 _model.dropPilwalkot2024ValueController ??=
@@ -440,28 +436,28 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                             ],
                             onChanged: (val) => setState(
                                 () => _model.dropPilwalkot2024Value = val),
-                            width: 340.0,
-                            height: 56.0,
+                            width: 340,
+                            height: 56,
                             textStyle: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
                                   fontFamily: 'Readex Pro',
-                                  letterSpacing: 0.0,
+                                  letterSpacing: 0,
                                 ),
                             hintText: 'Pilih Pilwalkot 2024',
                             icon: Icon(
                               Icons.keyboard_arrow_down_rounded,
                               color: FlutterFlowTheme.of(context).secondaryText,
-                              size: 24.0,
+                              size: 24,
                             ),
                             fillColor: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            elevation: 2.0,
+                            elevation: 2,
                             borderColor: FlutterFlowTheme.of(context).alternate,
-                            borderWidth: 2.0,
-                            borderRadius: 8.0,
-                            margin: EdgeInsetsDirectional.fromSTEB(
-                                16.0, 4.0, 16.0, 4.0),
+                            borderWidth: 2,
+                            borderRadius: 8,
+                            margin:
+                                EdgeInsetsDirectional.fromSTEB(16, 4, 16, 4),
                             hidesUnderline: true,
                             isOverButton: true,
                             isSearchable: false,
@@ -470,24 +466,23 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-1.0, 0.0),
+                        alignment: AlignmentDirectional(-1, 0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              26.0, 20.0, 26.0, 0.0),
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(26, 20, 26, 0),
                           child: Text(
                             '6. Kegiatan Sosialisasi Apa yang anda Harapkan Oleh Calon Walikota ?',
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Poppins',
-                                  letterSpacing: 0.0,
+                                  letterSpacing: 0,
                                 ),
                           ),
                         ),
                       ),
                       Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                         child: FlutterFlowDropDown<String>(
                           controller: _model.dropKegiatanValueController ??=
                               FormFieldController<String>(null),
@@ -501,27 +496,26 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                           ],
                           onChanged: (val) =>
                               setState(() => _model.dropKegiatanValue = val),
-                          width: 340.0,
-                          height: 56.0,
+                          width: 340,
+                          height: 56,
                           textStyle:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Readex Pro',
-                                    letterSpacing: 0.0,
+                                    letterSpacing: 0,
                                   ),
                           hintText: 'Pilih Kegiatan',
                           icon: Icon(
                             Icons.keyboard_arrow_down_rounded,
                             color: FlutterFlowTheme.of(context).secondaryText,
-                            size: 24.0,
+                            size: 24,
                           ),
                           fillColor:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          elevation: 2.0,
+                          elevation: 2,
                           borderColor: FlutterFlowTheme.of(context).alternate,
-                          borderWidth: 2.0,
-                          borderRadius: 8.0,
-                          margin: EdgeInsetsDirectional.fromSTEB(
-                              16.0, 4.0, 16.0, 4.0),
+                          borderWidth: 2,
+                          borderRadius: 8,
+                          margin: EdgeInsetsDirectional.fromSTEB(16, 4, 16, 4),
                           hidesUnderline: true,
                           isOverButton: true,
                           isSearchable: false,
@@ -529,17 +523,17 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-1.0, 0.0),
+                        alignment: AlignmentDirectional(-1, 0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              26.0, 20.0, 26.0, 0.0),
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(26, 20, 26, 0),
                           child: Text(
                             '9. Apakah Bersedia Dipasang Media Sosialisasi dan di Foto ?',
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Poppins',
-                                  letterSpacing: 0.0,
+                                  letterSpacing: 0,
                                 ),
                           ),
                         ),
@@ -549,17 +543,17 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                         onChanged: (val) => setState(() {}),
                         controller: _model.radioPasangmediaValueController ??=
                             FormFieldController<String>(null),
-                        optionHeight: 32.0,
-                        optionWidth: 100.0,
+                        optionHeight: 32,
+                        optionWidth: 100,
                         textStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
                                   fontFamily: 'Readex Pro',
-                                  letterSpacing: 0.0,
+                                  letterSpacing: 0,
                                 ),
                         selectedTextStyle:
                             FlutterFlowTheme.of(context).bodyMedium.override(
                                   fontFamily: 'Readex Pro',
-                                  letterSpacing: 0.0,
+                                  letterSpacing: 0,
                                 ),
                         buttonPosition: RadioButtonPosition.left,
                         direction: Axis.horizontal,
@@ -571,24 +565,23 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                         verticalAlignment: WrapCrossAlignment.start,
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-1.0, 0.0),
+                        alignment: AlignmentDirectional(-1, 0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              26.0, 20.0, 26.0, 0.0),
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(26, 20, 26, 0),
                           child: Text(
                             '10. Foto Pengambilan Survey',
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Poppins',
-                                  letterSpacing: 0.0,
+                                  letterSpacing: 0,
                                 ),
                           ),
                         ),
                       ),
                       Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -624,14 +617,14 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                             ),
                             transitionOnUserGestures: true,
                             child: ClipRRect(
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(8),
                               child: Image.network(
                                 valueOrDefault<String>(
                                   _model.uploadedFileUrl,
                                   'https://cdn-icons-png.flaticon.com/512/564/564950.png',
                                 ),
-                                width: 200.0,
-                                height: 200.0,
+                                width: 200,
+                                height: 200,
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -639,17 +632,16 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                         ),
                       ),
                       Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
                         child: Container(
-                          width: 301.0,
-                          height: 48.0,
+                          width: 301,
+                          height: 48,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(10.0),
-                              bottomRight: Radius.circular(10.0),
-                              topLeft: Radius.circular(10.0),
-                              topRight: Radius.circular(10.0),
+                              bottomLeft: Radius.circular(10),
+                              bottomRight: Radius.circular(10),
+                              topLeft: Radius.circular(10),
+                              topRight: Radius.circular(10),
                             ),
                             border: Border.all(
                               color: FlutterFlowTheme.of(context).secondaryText,
@@ -715,28 +707,28 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: AlignmentDirectional(-1, 0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        10.0, 0.0, 0.0, 0.0),
+                                        10, 0, 0, 0),
                                     child: FaIcon(
                                       FontAwesomeIcons.camera,
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryText,
-                                      size: 24.0,
+                                      size: 24,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      8.0, 0.0, 0.0, 0.0),
+                                      8, 0, 0, 0),
                                   child: Text(
                                     'Tambahkan gambar',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Readex Pro',
-                                          letterSpacing: 0.0,
+                                          letterSpacing: 0,
                                         ),
                                   ),
                                 ),
@@ -746,14 +738,13 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            0.0, 12.0, 0.0, 12.0),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 12),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Expanded(
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0, 0),
                                 child: FFButtonWidget(
                                   onPressed: () async {
                                     currentUserLocationValue =
@@ -822,26 +813,26 @@ class _SurveyPageWidgetState extends State<SurveyPageWidget> {
                                   },
                                   text: 'Simpan',
                                   options: FFButtonOptions(
-                                    width: 342.0,
-                                    height: 40.0,
+                                    width: 342,
+                                    height: 40,
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        24.0, 0.0, 24.0, 0.0),
+                                        24, 0, 24, 0),
                                     iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
+                                        0, 0, 0, 0),
                                     color: Color(0xFF780674),
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
                                           fontFamily: 'Poppins',
                                           color: Colors.white,
-                                          letterSpacing: 0.0,
+                                          letterSpacing: 0,
                                         ),
-                                    elevation: 3.0,
+                                    elevation: 3,
                                     borderSide: BorderSide(
                                       color: Colors.transparent,
-                                      width: 1.0,
+                                      width: 1,
                                     ),
-                                    borderRadius: BorderRadius.circular(8.0),
+                                    borderRadius: BorderRadius.circular(8),
                                   ),
                                 ),
                               ),
